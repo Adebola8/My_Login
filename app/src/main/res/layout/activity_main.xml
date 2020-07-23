@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_image"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/profile_user_account" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="#F6F1F1"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp">
+
+        <TextView
+            android:id="@+id/tvLogin_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="LOGIN PAGE"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#B059CC"
+            android:textFontWeight="10"
+            android:textSize="25sp"
+            android:textStyle="bold">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/design_background">
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/ic_baseline_email_24"
+                    android:hint="ke;vinrich@email.com"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/design_background"
+                app:passwordToggleEnabled="true">
+
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="**********"
+                    android:inputType="textPassword"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="LOGIN"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#B059CC"
+                android:textFontWeight="10"
+                android:textSize="24sp"
+                android:background="#E6D6D6"
+                android:textStyle="bold">
+
+
+            <TextView
+                android:id="@+id/tvUser"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+                android:text="New User?"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvsignup"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="-20dp"
+                android:text="SIGN UP HERE"
+                android:textColor="?android:attr/colorEdgeEffect"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/tvForgot_password"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="-60dp"
+                android:text="Forgot Password?"
+                android:textSize="20sp"
+                android:textStyle="italics"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:id="@+id/tvRecover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="190dp"
+                android:layout_marginTop="-20dp"
+                android:text="RECOVER HERE"
+                android:textColor="?android:attr/colorEdgeEffect"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
+
+
